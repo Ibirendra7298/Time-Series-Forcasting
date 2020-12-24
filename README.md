@@ -1,6 +1,12 @@
 # Time-Series-Forcasting
 Time series forcasting of traffic on JetRail.
 
+## Problem and Statement:
+
+ We are going to help Unicorn Investors with our data hacking skills. They are considering making an investment in a new form of transportation - JetRail. JetRail uses Jet propulsion technology to run rails and move people at a high speed! While JetRail has mastered the technology and they hold the patent for their product, the investment would only make sense, if they can get more than 1 Million monthly users with in next 18 months.
+ 
+ We need to help Unicorn ventures with the decision. They usually invest in B2C start-ups less than 4 years old looking for pre-series A funding. In order to help Unicorn Ventures in their decision, we need to forecast the traffic on JetRail for the next 7 months. We are provided with traffic data of JetRail since inception in the test file.
+
 ## Introduction
 Time Series is considered to be one of the less known skills in the data science space (Even I had little clue about it a couple of days back). I set myself on a journey to learn the basic steps for solving a Time Series problem and here I am sharing the same with you. These will definitely help you get a decent model in any future project you take up!.
 
@@ -97,5 +103,12 @@ An importance concern here is how to determine the value of ‘p’ and ‘q’.
   1. **Autocorrelation Function (ACF)**: It is a measure of the correlation between the the TS with a lagged version of itself. For instance at lag 5, ACF would compare series at time instant ‘t1’…’t2’ with series at instant ‘t1-5’…’t2-5’ (t1-5 and t2 being end points).
   2. **Partial Autocorrelation Function (PACF)**: This measures the correlation between the TS with a lagged version of itself but after eliminating the variations already explained by the intervening comparisons. Eg at lag 5, it will check the correlation but remove the effects already explained by lags 1 to 4.
   
-**p** – The lag value where the **PACF** chart crosses the upper confidence interval for the first time. If you notice closely, in this case p=2.
+**p** – The lag value where the **PACF** chart crosses the upper confidence interval for the first time.
+
 **q** – The lag value where the **ACF** chart crosses the upper confidence interval for the first time.
+
+## Reference:
+
+  1. https://www.analyticsvidhya.com/blog/2016/02/time-series-forecasting-codes-python.
+  2. https://datahack.analyticsvidhya.com/contest/practice-problem-time-series-2.
+  3. https://www.kaggle.com/anmolkumar/ensembles-for-time-series-forecasting/output.
